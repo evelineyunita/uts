@@ -17,3 +17,14 @@ exports.tampilsparepart = function(req,res){
         }
     });
 };
+
+//menampilkan data montir
+exports.tampildatamontir = function (req, res) {
+	connection.query('SELECT * FROM t_montir', function (error, rows, fields) {
+		if (error) {
+			console.log(error);
+		} else {
+			response.ok(rows, res)
+		}
+	});
+};
