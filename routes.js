@@ -12,17 +12,20 @@ module.exports = function(app) {
          app.route('/tampilmontir')
          .get(jsonku.tampildatamontir);
 
-        app.route('/tampil/:id')
+         app.route('/tampil/:id')
          .get(jsonku.tampildatasparepartid);
 
          app.route('/tampilmontir/:id')
-          .get(jsonku.tampildatamontirid);
+            .get(jsonku.tampildatamontirid);
 
-         app.route('/tambahservis')
+            app.route('/tambahservis')
             .post(jsonku.tambahservis);
 
-         app.route('/tambahlevel')
+            app.route('/tambahlevel')
             .post(jsonku.tambahlevel);
+
+            app.route('/tambahuser')
+            .post(jsonku.tambahuser);
 
 
 
