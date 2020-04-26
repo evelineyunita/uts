@@ -14,10 +14,10 @@ module.exports = function(app) {
 
          app.route('/tampil/:id')
          .get(jsonku.tampildatasparepartid);
-
+         
          app.route('/tampilmontir/:id')
             .get(jsonku.tampildatamontirid);
-
+            
             app.route('/tambahservis')
             .post(jsonku.tambahservis);
 
@@ -33,6 +33,7 @@ module.exports = function(app) {
             app.route('/tambahsparepart')
             .post(jsonku.tambahsparepart);
 
-
+            app.route('/ubahmontir')
+            .put(jsonku.ubahmontir);
 
 } 
